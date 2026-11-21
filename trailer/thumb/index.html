@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1280, height=720" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<style>
+  @font-face { font-family: 'NotoTamil'; src: url('assets/fonts/NotoSansTamil.ttf'); font-weight: 700; }
+  @font-face { font-family: 'NotoDeva'; src: url('assets/fonts/NotoSansDevanagari.ttf'); font-weight: 700; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; background: #0B0609; }
+  #root { position: absolute; inset: 0; overflow: hidden; font-family: 'Inter', sans-serif; color: #fff;
+    background: linear-gradient(160deg, #1A0509 0%, #0B0609 45%, #22060F 100%); }
+  .wash { position: absolute; border-radius: 50%; }
+  #wa { left: -200px; top: -600px; width: 1200px; height: 1200px; background: radial-gradient(circle, rgba(224,16,58,0.38) 0%, rgba(224,16,58,0) 62%); }
+  #wb { left: 500px; top: 200px; width: 1200px; height: 1200px; background: radial-gradient(circle, rgba(138,6,38,0.55) 0%, rgba(138,6,38,0) 62%); }
+  #vig { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.5) 100%); }
+  #logo { position: absolute; left: 64px; top: 52px; height: 62px; }
+  #h1 { position: absolute; left: 64px; top: 185px; font-size: 104px; font-weight: 900; letter-spacing: -0.035em; line-height: 0.98; }
+  #h1 em { font-style: normal; color: #FF2D55; display: block; }
+  #chips { position: absolute; left: 64px; top: 560px; display: flex; gap: 14px; }
+  #chips span { background: rgba(255,255,255,0.10); border: 2px solid rgba(255,214,224,0.35); padding: 10px 22px; border-radius: 999px; font-size: 32px; font-weight: 800; }
+  #phone { position: absolute; left: 880px; top: 80px; width: 330px; height: 522px; border-radius: 44px; background: #0B0609; border: 9px solid #1b1214; box-shadow: 0 30px 60px rgba(0,0,0,.6); overflow: hidden; }
+  #phone img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  #rule { position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: linear-gradient(90deg, #FF5A6E, #E0103A 55%, #8A0626); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="1" data-width="1280" data-height="720">
+  <div class="wash" id="wa"></div><div class="wash" id="wb"></div><div id="vig"></div>
+  <img id="logo" src="assets/brand/lockup-on-dark.png" alt="RubyAlert" />
+  <div id="h1">YOUR PHONE<em>= SOUNDBOX</em></div>
+  <div id="chips"><span style="font-family:'NotoTamil'">தமிழ்</span><span>English</span><span style="font-family:'NotoDeva'">हिन्दी</span></div>
+  <div id="phone"><img src="assets/screens/voice.png" alt="" /></div>
+  <div id="rule"></div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  window.__timelines["main"] = gsap.timeline({ paused: true });
+</script>
+</body>
+</html>

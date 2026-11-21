@@ -1,0 +1,50 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: transparent; font-family: 'Inter', sans-serif; }
+    #end-claim { position: absolute; left: 120px; top: 250px; font-size: 140px; font-weight: 900; letter-spacing: -0.03em; line-height: 1.04; color: #fff; }
+    #end-sub { position: absolute; left: 124px; top: 720px; font-size: 40px; font-weight: 700; color: #FFD6E0; max-width: 1300px; line-height: 1.3; }
+    #end-iris { display: none; position: absolute; left: 960px; top: 540px; width: 200px; height: 200px; margin: -100px 0 0 -100px; border-radius: 50%; background: #fff; }
+    #end-mark { position: absolute; left: 380px; top: 340px; width: 400px; height: 400px; }
+    .tl { position: absolute; width: 100px; height: 100px; background-image: url('assets/brand/mark-color-transparent.png'); background-size: 400px 400px; }
+    #end-word-wrap { position: absolute; left: 820px; top: 472px; width: 760px; height: 140px; overflow: hidden; }
+    #end-word { position: absolute; left: 0; top: 0; width: 760px; height: auto; }
+    #end-cta { position: absolute; left: 0; right: 0; top: 800px; text-align: center; font-size: 52px; font-weight: 900; color: #fff; letter-spacing: -0.01em; }
+    #end-langs { position: absolute; left: 0; right: 0; top: 880px; text-align: center; font-size: 36px; font-weight: 700; color: #C2A9B2; }
+  </style>
+  <div id="root" data-composition-id="end" data-width="1920" data-height="1080">
+    <div id="end-claim">Nothing leaves<br>this phone.</div>
+    <div id="end-sub">Alerts are read and processed on the phone. Offline-first, no upload.</div>
+    <div id="end-iris"></div>
+    <div id="end-mark"></div>
+    <div id="end-word-wrap"><img id="end-word" src="assets/brand/wordmark-on-dark.png" alt="RubyAlert" /></div>
+    <div id="end-cta">Your phone, a payment soundbox.</div>
+    <div id="end-langs">Tamil · English · Hindi · Android</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const mark = document.getElementById('end-mark');
+    const tiles = [];
+    for (let r = 0; r < 4; r++) for (let c = 0; c < 4; c++) {
+      const t = document.createElement('div');
+      t.className = 'tl'; t.style.left = c * 100 + 'px'; t.style.top = r * 100 + 'px';
+      t.style.backgroundPosition = (-c * 100) + 'px ' + (-r * 100) + 'px';
+      mark.appendChild(t); tiles.push([t, c, r]);
+    }
+    tl.fromTo('#end-claim', { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 0.6, ease: 'power4.out' }, 0.2);
+    tl.fromTo('#end-sub', { opacity: 0 }, { opacity: 1, duration: 0.5 }, 1.2);
+    tl.fromTo('#end-iris', { scale: 0 }, { scale: 16, duration: 0.9, ease: 'power3.inOut' }, 4.6);
+    tl.to('#end-claim,#end-sub', { opacity: 0, duration: 0.3 }, 4.8);
+    // logo break: the mark's shards fly in from off the edges and lock together
+    tiles.forEach(([t, c, r], i) => {
+      const a = (i * 137.5) * Math.PI / 180;
+      const dist = 60 + (i % 5) * 25;
+      tl.fromTo(t, { x: Math.cos(a) * dist, y: Math.sin(a) * dist, rotation: (i % 2 ? 1 : -1) * 12, scale: 1.1, opacity: 0 },
+        { x: 0, y: 0, rotation: 0, scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 5.0 + i * 0.015);
+    });
+    tl.fromTo('#end-mark', { scale: 1 }, { scale: 1.08, duration: 0.12, yoyo: true, repeat: 1, ease: 'power2.out' }, 6.0);
+    tl.fromTo('#end-word-wrap', { clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)', duration: 0.6, ease: 'power3.out' }, 6.4);
+    tl.fromTo('#end-cta', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out' }, 7.2);
+    tl.fromTo('#end-langs', { opacity: 0 }, { opacity: 1, duration: 0.5 }, 7.6);
+    window.__timelines['end'] = tl;
+  </script>
+</template>

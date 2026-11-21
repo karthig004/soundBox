@@ -1,0 +1,20 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: transparent; font-family: 'Inter', sans-serif; color: #fff; }
+    #turn-wipe { position: absolute; inset: 0; background: #E0103A; transform-origin: right; }
+    #turn-line { position: absolute; left: 140px; top: 300px; font-size: 140px; font-weight: 900; letter-spacing: -0.03em; line-height: 1.04; width: 1500px; }
+    #turn-sub { position: absolute; left: 144px; top: 760px; font-size: 44px; font-weight: 700; color: #FFD6E0; }
+  </style>
+  <div id="root" data-composition-id="turn" data-width="1920" data-height="1080">
+    <div id="turn-line">Your phone is<br>already a soundbox.</div>
+    <div id="turn-sub">No extra device to rent.</div>
+    <div id="turn-wipe"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo('#turn-wipe', { scaleX: 1 }, { scaleX: 0, duration: 0.6, ease: 'power3.inOut' }, 0);
+    tl.fromTo('#turn-line', { x: 80 }, { x: 0, duration: 0.7, ease: 'power4.out' }, 0.2);
+    tl.fromTo('#turn-sub', { opacity: 0 }, { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1.6);
+    window.__timelines['turn'] = tl;
+  </script>
+</template>

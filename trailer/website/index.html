@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RubyAlert: your phone is already a soundbox</title>
+<meta name="description" content="RubyAlert reads payment alerts on your phone and says them out loud in Tamil, English or Hindi. Works offline. Nothing leaves your phone.">
+<style>
+  :root { --ruby:#E0103A; --ruby-bright:#FF2D55; --night:#0B0609; --ink:#1A0B10; --dim:#5E4A52; --bg:#FBF5F7; --card:#fff; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  header{background:var(--night);color:#fff;padding:28px 0 56px}
+  header img.logo{height:44px;display:block;margin-bottom:48px}
+  h1{font-size:clamp(34px,6vw,64px);line-height:1.05;letter-spacing:-.03em;font-weight:900;max-width:14em}
+  h1 em{font-style:normal;color:var(--ruby-bright)}
+  header p{margin-top:18px;font-size:clamp(17px,2.2vw,22px);color:#FFD6E0;max-width:34em}
+  .video{margin-top:36px;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:#000;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+  .video iframe{width:100%;height:100%;border:0}
+  .btn{display:inline-block;margin-top:28px;background:linear-gradient(90deg,#FF5A6E,#E0103A 55%,#8A0626);color:#fff;font-weight:800;text-decoration:none;padding:16px 28px;border-radius:999px}
+  section{padding:64px 0}
+  h2{font-size:clamp(26px,4vw,40px);letter-spacing:-.02em;font-weight:900;margin-bottom:12px}
+  .lead{color:var(--dim);max-width:40em;font-size:18px}
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px}
+  .feat.rev .shot{order:-1}
+  .feat h3{font-size:28px;letter-spacing:-.02em;margin-bottom:8px}
+  .feat p{color:var(--dim);font-size:18px}
+  .shot{display:flex;justify-content:center}
+  .shot img{width:min(100%,300px);border-radius:28px;border:8px solid #1b1214;box-shadow:0 24px 48px rgba(42,0,8,.3)}
+  .pain{background:var(--night);color:#fff}
+  .pain .lead{color:#FFD6E0}
+  .langs{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+  .langs span{background:#fff;border:1px solid #F0E1E6;padding:10px 18px;border-radius:999px;font-weight:700}
+  footer{padding:40px 0;color:var(--dim);font-size:14px;text-align:center}
+  @media(max-width:760px){.feat{grid-template-columns:1fr;gap:24px}.feat.rev .shot{order:0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img class="logo" src="img/lockup-on-dark.png" alt="RubyAlert">
+  <h1>Your phone is already a <em>soundbox.</em></h1>
+  <p>RubyAlert reads payment alerts on your phone and says them out loud in Tamil, English or Hindi. No extra device to rent.</p>
+  <!-- Replace YOUR_VIDEO_ID with the ID from your YouTube link (the part after v=) -->
+  <div class="video"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="RubyAlert trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  <a class="btn" href="#download">Get RubyAlert for Android</a>
+</div></header>
+
+<section class="pain"><div class="wrap">
+  <h2>A customer pays. You never hear it.</h2>
+  <p class="lead">A soundbox fixes that, but it charges rent, so many small shops go without. RubyAlert turns the phone you already own into the soundbox.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How it works</h2>
+  <p class="lead">Alerts from the payment apps and bank SMS you choose are read on the phone, checked, and announced once.</p>
+
+  <div class="feat"><div><h3>It speaks every payment</h3><p>Hear the amount and who paid, in Tamil, English or Hindi. Pick a voice and a chime in Voice Studio.</p>
+    <div class="langs"><span>தமிழ்</span><span>English</span><span>हिन्दी</span></div></div>
+    <div class="shot"><img src="img/voice.png" alt="Voice Studio screen" loading="lazy"></div></div>
+
+  <div class="feat rev"><div><h3>Home shows the day at a glance</h3><p>Collected today, received, sent and the last announcement, with quick actions for pausing, day close, voice and translate.</p></div>
+    <div class="shot"><img src="img/home.png" alt="Home screen" loading="lazy"></div></div>
+
+  <div class="feat"><div><h3>Every payment is remembered</h3><p>History keeps each payment, searchable by name, amount, UTR or bank.</p></div>
+    <div class="shot"><img src="img/history.png" alt="History screen" loading="lazy"></div></div>
+
+  <div class="feat rev"><div><h3>Voice reminders</h3><p>Set a time and RubyAlert says your message aloud, like "Call the supplier".</p></div>
+    <div class="shot"><img src="img/reminders.png" alt="Reminders screen" loading="lazy"></div></div>
+
+  <div class="feat"><div><h3>Daily closing and reports</h3><p>Customer-wise and bank-wise totals, with Excel and CSV exports.</p></div>
+    <div class="shot"><img src="img/reports.png" alt="Reports screen" loading="lazy"></div></div>
+</div></section>
+
+<section style="background:#fff"><div class="wrap">
+  <h2>Private by design</h2>
+  <p class="lead">Alerts are read and processed on your phone. Offline-first, nothing is uploaded. RubyAlert reads notifications; it does not verify payments with the bank.</p>
+</div></section>
+
+<section id="download"><div class="wrap" style="text-align:center">
+  <img src="img/mark-color-transparent.png" alt="" style="height:90px">
+  <h2 style="margin-top:16px">Get RubyAlert</h2>
+  <p class="lead" style="margin:0 auto">Android. Add your store link or APK download here.</p>
+  <!-- Replace href with your Play Store or download link -->
+  <a class="btn" href="#">Download for Android</a>
+</div></section>
+<footer>© RubyAlert</footer>
+</body>
+</html>

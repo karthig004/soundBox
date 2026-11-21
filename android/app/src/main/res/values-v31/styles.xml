@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Android 12+: the system splash shows the RubyAlert icon tile on dark ruby. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+        <item name="android:windowBackground">@color/splash_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/splash_bg</item>
+        <item name="colorPrimary">@color/ruby</item>
+        <item name="colorAccent">@color/ruby_bright</item>
+        <item name="android:windowSplashScreenBackground">@color/splash_bg</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+    </style>
+
+</resources>

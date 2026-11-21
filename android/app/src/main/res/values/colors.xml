@@ -1,0 +1,9 @@
+<resources>
+    <!-- RubyAlert brand colours (from the logo) -->
+    <color name="ruby">#E0103A</color>
+    <color name="ruby_bright">#FF2D55</color>
+    <color name="ruby_deep">#8A0626</color>
+    <color name="ruby_night">#2A0008</color>
+    <!-- Launch / window background: matches the app's dark ruby surface so there is no flash. -->
+    <color name="splash_bg">#0B0609</color>
+</resources>

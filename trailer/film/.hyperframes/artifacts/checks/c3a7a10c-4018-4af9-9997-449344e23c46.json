@@ -1,0 +1,419 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 8
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 6,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 3.833,
+        "selector": "#bg-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -250.43,
+          "top": -861.45,
+          "right": 1449.57,
+          "bottom": 838.55,
+          "width": 1700,
+          "height": 1700
+        },
+        "containerSelector": "#bg > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 250.43,
+          "top": 861.45
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/bg.html",
+        "bbox": {
+          "x": -250.43,
+          "y": -861.45,
+          "width": 1700,
+          "height": 1700
+        },
+        "firstSeen": 3.833,
+        "lastSeen": 65.167,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.833,
+          11.5,
+          19.167,
+          26.833,
+          34.5,
+          42.167,
+          49.833,
+          57.5,
+          65.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 3.833,
+        "selector": "#bg-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 844.93,
+          "top": 272.46,
+          "right": 2544.93,
+          "bottom": 1972.46,
+          "width": 1700,
+          "height": 1700
+        },
+        "containerSelector": "#bg > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "right": 624.93,
+          "bottom": 892.46
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/bg.html",
+        "bbox": {
+          "x": 844.93,
+          "y": 272.46,
+          "width": 1700,
+          "height": 1700
+        },
+        "firstSeen": 3.833,
+        "lastSeen": 65.167,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.833,
+          11.5,
+          19.167,
+          26.833,
+          34.5,
+          42.167,
+          49.833,
+          57.5,
+          65.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 3.833,
+        "selector": "#pain-cam",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -9.39,
+          "top": -8.8,
+          "right": 1941.91,
+          "bottom": 1088.8,
+          "width": 1951.3,
+          "height": 1097.6
+        },
+        "containerSelector": "#pain > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 9.39,
+          "right": 21.91,
+          "top": 8.8,
+          "bottom": 8.8
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/pain.html",
+        "bbox": {
+          "x": -9.39,
+          "y": -8.8,
+          "width": 1951.3,
+          "height": 1097.6
+        },
+        "firstSeen": 3.833,
+        "lastSeen": 11.5,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          3.833,
+          11.5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 34.5,
+        "selector": "#voice-shot",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 179.55,
+          "top": 58.41,
+          "right": 640.45,
+          "bottom": 1080.77,
+          "width": 460.9,
+          "height": 1022.36
+        },
+        "containerSelector": "#voice-phone",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 180,
+          "top": 60,
+          "right": 640,
+          "bottom": 1056,
+          "width": 460,
+          "height": 996
+        },
+        "overflow": {
+          "bottom": 24.77
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "voice-shot",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/voice.html",
+        "bbox": {
+          "x": 179.55,
+          "y": 58.41,
+          "width": 460.9,
+          "height": 1022.36
+        },
+        "firstSeen": 34.5,
+        "lastSeen": 34.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          34.5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 49.833,
+        "selector": "#sc3",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 1253.84,
+          "top": 61.8,
+          "right": 1706.16,
+          "bottom": 1065.13,
+          "width": 452.32,
+          "height": 1003.33
+        },
+        "containerSelector": "#proof-phone",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 1250,
+          "top": 60,
+          "right": 1710,
+          "bottom": 1056,
+          "width": 460,
+          "height": 996
+        },
+        "overflow": {
+          "bottom": 9.13
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "sc3",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/proof.html",
+        "bbox": {
+          "x": 1253.84,
+          "y": 61.8,
+          "width": 452.32,
+          "height": 1003.33
+        },
+        "firstSeen": 49.833,
+        "lastSeen": 49.833,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          49.833
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 65.167,
+        "selector": "#end-word",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 820,
+          "top": 472,
+          "right": 1580,
+          "bottom": 638.25,
+          "width": 760,
+          "height": 166.25
+        },
+        "containerSelector": "#end-word-wrap",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 820,
+          "top": 472,
+          "right": 1580,
+          "bottom": 612,
+          "width": 760,
+          "height": 140
+        },
+        "overflow": {
+          "bottom": 26.25
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "end-word",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/end.html",
+        "bbox": {
+          "x": 820,
+          "y": 472,
+          "width": 760,
+          "height": 166.25
+        },
+        "firstSeen": 65.167,
+        "lastSeen": 65.167,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          65.167
+        ]
+      }
+    ],
+    "duration": 69,
+    "samples": [
+      3.833,
+      11.5,
+      19.167,
+      26.833,
+      34.5,
+      42.167,
+      49.833,
+      57.5,
+      65.167
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 6,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      3.833,
+      19.167,
+      34.5,
+      49.833,
+      65.167
+    ],
+    "checked": 13,
+    "passed": 13
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Payment received\" renders at 24 px for 5.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Payment received",
+        "selector": "#pain-card > small:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/pain.html",
+        "bbox": {
+          "x": 1220,
+          "y": 146,
+          "width": 210.63,
+          "height": 29
+        },
+        "time": 0,
+        "times": [
+          0
+        ],
+        "fontPx": 24,
+        "floorPx": 28,
+        "seconds": 5,
+        "elements": [
+          {
+            "selector": "#pain-card > small:nth-of-type(1)",
+            "text": "Payment received",
+            "fontPx": 24,
+            "time": 0,
+            "seconds": 5
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 552
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
